@@ -1,0 +1,32 @@
+.navigation{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  top: 15px;
+  font-size: 20px;
+  // @mixin clearfix;
+  //
+  // @mixin atLarge{
+  //   width: 40%;
+  //   left: 30%;
+  //   font-size: 25px;
+  // }
+
+
+  &__button{
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    text-align: center;
+    color: #555;
+    padding-top: 3px;
+
+    &:hover{
+      color: black;
+    	background-color: rgba(0, 0, 0, 0.5);
+    	border-radius: 10px;
+    	cursor: pointer;
+    	box-shadow: 6px 6px 14px 5px rgba(0,0,0,0.75);
+    }
+  }
+}

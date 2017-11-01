@@ -1,1 +1,8 @@
-@import 'globals/globals';
+@import "globals/globals";
+@import "globals/background";
+@import "globals/mixins";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/main-display";
+@import "modules/navigation";
+@import "modules/colors";

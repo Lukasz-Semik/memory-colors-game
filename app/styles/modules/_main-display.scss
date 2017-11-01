@@ -1,0 +1,107 @@
+.main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /*background-color: rgba(55,55,55,0.5);*/
+  @include clearfix;
+
+  width: 75vw;
+  height: 65vh;
+  padding-top:10px;
+  @include atSmall{
+    width: 70%;
+    transform: translate(-50%, -60%);
+  }
+  @include atMedium{
+    transform: translate(-50%, -55%);
+  }
+  @include atLarge{
+    width: 790px;
+    transform: translate(-50%, -50%);
+  }
+  @include landscapePos{
+    width: 260px;
+    transform: translate(-50%, -40%);
+  }
+
+  /*MEDIUM GAME LEVEL*/
+  &--medium{
+    width: 90%;
+    transform: translate(-50%, -40%);
+    @include atSmall{
+      width: 500px;
+      transform: translate(-50%, -60%);
+    }
+    @include atXLarge{
+      width: 580px;
+      transform: translate(-50%, -60%);
+    }
+    @include landscapePos{
+      width: 190px;
+      transform: translate(-50%, -40%);
+    }
+  }
+  /*SHORT GAME LEVEL*/
+  &--short{
+    width: 310px;
+    @include atXLarge{
+      width: 400px;
+    }
+    @include landscapePos{
+      transform: translate(-50%, -35%);
+    }
+  }
+
+  &__tile{
+    transition: background 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    border-radius: 10%;
+    background-color: black;
+    z-index: 2;
+    float: left;
+    position: relative;
+    width: 22%;
+    margin: 1.5%;
+    &:hover{
+      cursor: pointer;
+    }
+    @include landscapePos {
+      width: 8.5%;
+      margin: 1.5%;
+    }
+    @include atSmall{
+      width: 13.66%;
+      margin: 1.5%;
+    }
+    /*MEDIUM GAME LEVEL*/
+    &--medium{
+      @include atSmall{
+        width: 22%;
+        margin: 1.5%;
+      }
+      // @include landscapePos{
+      //   width: 13.66%;
+      //   margin: 1.5%;
+      // }
+    }
+    /*SHORT GAME LEVEL*/
+    &--short{
+      width: 30.33%;
+      margin: 1.5%;
+      @include landscapePos{
+        width: 13.66%;
+        margin: 1.5%;
+      }
+    }
+    &:before{
+      content: "";
+      display:block;
+      padding-top: 100%;
+    }
+
+    &--shadow{
+      box-shadow: 6px 6px 14px 5px rgba(0,0,0,0.75);
+    }
+  }
+}
