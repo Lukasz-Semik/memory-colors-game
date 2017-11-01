@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
   }
   @include landscapePos{
-    width: 230px;
+    width: 170px;
     transform: translate(-50%, -40%);
   }
 
@@ -39,7 +39,7 @@
       transform: translate(-50%, -60%);
     }
     @include landscapePos{
-      width: 170px;
+      width: 130px;
       transform: translate(-50%, -40%);
     }
   }
