@@ -1,4 +1,4 @@
 # Memory Color Game
-Classic memory game, with 3 levels o difficulty.
+Classic memory game.
 ## Online version:
 https://memory-colors-game.herokuapp.com/
