@@ -23,7 +23,7 @@
   }
   @include landscapePos{
     width: 170px;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -30%);
   }
 
   /*MEDIUM GAME LEVEL*/
@@ -40,7 +40,7 @@
     }
     @include landscapePos{
       width: 130px;
-      transform: translate(-50%, -40%);
+      transform: translate(-50%, -30%);
     }
   }
   /*SHORT GAME LEVEL*/
